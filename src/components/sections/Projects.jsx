@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import ArdunioMachine from "/src/assets/ardunio.png";
 import ContrastApp from "/src/assets/contrastApp.png";
+import RodentVisual from "/src/assets/rodentVisual.png";
 
 export const Projects = () => {
   return (
@@ -23,13 +24,13 @@ export const Projects = () => {
                   </h3>
                   <p className="text-neutral-800 mb-2 italic">Feb 2024</p>
                   <p className="text-neutral-800 mb-4">
-                    Designed and implemented prototype app allowings users to
+                    Designed and implemented prototype app allowing users to
                     input foreground and background colors, displaying the
                     contrast ratio and WCAG accessibility level. App integrated
                     Color Contrast Checker library for calculations.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {["Vue.js"].map((skill, key) => (
+                  <div className="flex flex-wrap gap-2 mb-1">
+                    {["Vue.js", "JavaScript", "HTML/CSS"].map((skill, key) => (
                       <span
                         key={key}
                         className="bg-amber-800/10 text-amber-800 py-1 px-4 rounded-full text-sm"
@@ -57,11 +58,11 @@ export const Projects = () => {
                   </p>
                   <p className="text-neutral-800 mb-4">
                     2.5DoF gantry marker plotting machine created with ESP32
-                    Feather, hardware, and 3D printed components. Machine draws
+                    Feather, hardware, and 3D-printed components. Machine draws
                     with automated text/shape input, with manual joystick
                     control for freedraw and marker pressure adjustment.
                   </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-1">
                     {["C++", "3D Modeling"].map((skill, key) => (
                       <span
                         key={key}
@@ -77,6 +78,39 @@ export const Projects = () => {
                   src={ArdunioMachine}
                   alt="Arduino Drawing Machine"
                   className="w-1/3 h-auto rounded-xl object-cover mb-1 border shadow-sm border-amber-800/10"
+                />
+              </div>
+            </div>
+
+            <div className="p-6 rounded-xl border shadow-sm border-sky-900/10 hover:-translate-y-1 hover:border-sky-900/20 transition-all">
+              <div className="flex justify-between">
+                <div className="mr-1">
+                  <h3 className="text-xl font-bold">
+                    Geospatial Data Visualization
+                  </h3>
+                  <p className="text-neutral-800 mb-2 italic">Oct - Nov 2024</p>
+                  <p className="text-neutral-800 mb-4">
+                    Multi-layered map using choropleth, contour, and clustering
+                    to highlight patterns of rodent activity across NYC
+                    boroughs. Map included interactive features for zoomming,
+                    hovering, and tooltips to reveal additional data.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-1">
+                    {["D3.js", "JavaScript", "HTML/CSS"].map((skill, key) => (
+                      <span
+                        key={key}
+                        className="bg-amber-800/10 text-amber-800 py-1 px-4 rounded-full text-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <img
+                  src={RodentVisual}
+                  alt="NYC Visualization"
+                  className="w-1/3 h-auto rounded-xl object-cover mb-1 border shadow-sm border-amber-800/10 "
                 />
               </div>
             </div>

@@ -29,7 +29,6 @@ const technology = [
 ];
 
 export const About = () => {
-
   return (
     <section
       id="about"
@@ -66,6 +65,9 @@ export const About = () => {
                   designs, I'm seeking full-time job opportunities. My
                   experience further spans in backend development and data
                   analytics.
+                </p>
+                <p className="text-neutral-800 mb-6">
+                  Feel free to contact me at mn473@cornell.edu!
                 </p>
               </div>
 
