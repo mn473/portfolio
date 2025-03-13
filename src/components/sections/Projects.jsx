@@ -85,7 +85,7 @@ export const Projects = () => {
             Some frontend development projects & other cool projects I've worked
             on...
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-3">
             {projects.map((project, index) => (
               <div key={index} className="min-h-full">
                 <ProjectCard {...project} />
