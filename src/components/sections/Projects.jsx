@@ -1,7 +1,41 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { ProjectCard } from "../ProjectCard";
 import ArdunioMachine from "/src/assets/ardunio.png";
 import ContrastApp from "/src/assets/contrastApp.png";
 import RodentVisual from "/src/assets/rodentVisual.png";
+
+const projects = [
+  {
+    name: "Constrast Checker Prototype App",
+    date: "Feb 2024",
+    description:
+      "Designed and implemented prototype app allowing users to input foreground and background colors, displaying the contrast ratio and WCAG accessibility level. App integrated Color Contrast Checker library for calculations.",
+    image: ContrastApp,
+    skills: ["Vue.js", "JavaScript", "HTML/CSS"],
+    bgColor: "bg-amber-800/10",
+    textColor: "text-amber-800",
+  },
+  {
+    name: "Ardunio Drawing Machine",
+    date: "Sept - Dec 2024",
+    description:
+      "2.5DoF gantry marker plotting machine created with ESP32 Feather, hardware, and 3D-printed components. Machine draws with automated text/shape input, with manual joystickcontrol for freedraw and marker pressure adjustment.",
+    image: ArdunioMachine,
+    skills: ["C++", "3D Modeling"],
+    bgColor: "bg-sky-900/10",
+    textColor: "text-sky-900",
+  },
+  {
+    name: "Geospatial Data Visualization",
+    date: "Oct - Nov 2024",
+    description:
+      "Multi-layered map using choropleth, contour, and clustering to highlight patterns of rodent activity across NYC boroughs. Map included interactive features for zoomming, hovering, and tooltips to reveal additional data.",
+    image: RodentVisual,
+    skills: ["D3.js", "JavaScript", "HTML/CSS"],
+    bgColor: "bg-amber-800/10",
+    textColor: "text-amber-800",
+  },
+];
 
 export const Projects = () => {
   return (
@@ -14,106 +48,12 @@ export const Projects = () => {
           <h2 className="text-5xl font-bold mb-10 bg-gradient-to-r from-slate-800 to-sky-900 bg-clip-text text-transparent text-center">
             Featured Projects
           </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border shadow-sm border-sky-900/10 hover:-translate-y-1 hover:border-sky-900/20 transition-all">
-              <div className="flex justify-between">
-                <div className="mr-1">
-                  <h3 className="text-xl font-bold">
-                    Constrast Checker Prototype App
-                  </h3>
-                  <p className="text-neutral-800 mb-2 italic">Feb 2024</p>
-                  <p className="text-neutral-800 mb-4">
-                    Designed and implemented prototype app allowing users to
-                    input foreground and background colors, displaying the
-                    contrast ratio and WCAG accessibility level. App integrated
-                    Color Contrast Checker library for calculations.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-1">
-                    {["Vue.js", "JavaScript", "HTML/CSS"].map((skill, key) => (
-                      <span
-                        key={key}
-                        className="bg-amber-800/10 text-amber-800 py-1 px-4 rounded-full text-sm"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <img
-                  src={ContrastApp}
-                  alt="Constrast App Prototype"
-                  className="w-1/3 h-auto rounded-xl object-cover mb-1 border shadow-sm border-amber-800/10 "
-                />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
+            {projects.map((project, index) => (
+              <div key={index} className="min-h-full">
+                <ProjectCard {...project} />
               </div>
-            </div>
-
-            <div className="p-6 rounded-xl border shadow-sm border-sky-900/10 hover:-translate-y-1 hover:border-sky-900/20 transition-all">
-              <div className="flex justify-between">
-                <div className="mr-1">
-                  <h3 className="text-xl font-bold">Ardunio Drawing Machine</h3>
-                  <p className="text-neutral-800 mb-2 italic">
-                    Sept - Dec 2024
-                  </p>
-                  <p className="text-neutral-800 mb-4">
-                    2.5DoF gantry marker plotting machine created with ESP32
-                    Feather, hardware, and 3D-printed components. Machine draws
-                    with automated text/shape input, with manual joystick
-                    control for freedraw and marker pressure adjustment.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-1">
-                    {["C++", "3D Modeling"].map((skill, key) => (
-                      <span
-                        key={key}
-                        className="bg-amber-800/10 text-amber-800 py-1 px-4 rounded-full text-sm"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <img
-                  src={ArdunioMachine}
-                  alt="Arduino Drawing Machine"
-                  className="w-1/3 h-auto rounded-xl object-cover mb-1 border shadow-sm border-amber-800/10"
-                />
-              </div>
-            </div>
-
-            <div className="p-6 rounded-xl border shadow-sm border-sky-900/10 hover:-translate-y-1 hover:border-sky-900/20 transition-all">
-              <div className="flex justify-between">
-                <div className="mr-1">
-                  <h3 className="text-xl font-bold">
-                    Geospatial Data Visualization
-                  </h3>
-                  <p className="text-neutral-800 mb-2 italic">Oct - Nov 2024</p>
-                  <p className="text-neutral-800 mb-4">
-                    Multi-layered map using choropleth, contour, and clustering
-                    to highlight patterns of rodent activity across NYC
-                    boroughs. Map included interactive features for zoomming,
-                    hovering, and tooltips to reveal additional data.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-1">
-                    {["D3.js", "JavaScript", "HTML/CSS"].map((skill, key) => (
-                      <span
-                        key={key}
-                        className="bg-amber-800/10 text-amber-800 py-1 px-4 rounded-full text-sm"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <img
-                  src={RodentVisual}
-                  alt="NYC Visualization"
-                  className="w-1/3 h-auto rounded-xl object-cover mb-1 border shadow-sm border-amber-800/10 "
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </RevealOnScroll>
