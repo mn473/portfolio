@@ -37,9 +37,12 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-5xl font-bold mb-10 bg-gradient-to-r from-slate-800 to-sky-900 bg-clip-text text-transparent text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-1 bg-gradient-to-r from-slate-800 to-sky-900 bg-clip-text text-transparent text-center">
             About Me
           </h2>
+          <p className="text-neutral-800 md:text-xl italic text-center mb-6">
+            A quick introduction of my background and interests...
+          </p>
 
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <img
@@ -118,12 +121,12 @@ export const About = () => {
                 </div>
 
                 <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4">Technologies</h3>
+                  <h3 className="text-xl font-bold mb-4">Tools</h3>
                   <div className="flex flex-wrap gap-3">
                     {technology.map((tech, key) => (
                       <span
                         key={key}
-                        className="bg-amber-800/10 text-amber-800 py-1 px-3 rounded-full text-sm
+                        className="bg-sky-900/10 text-sky-900 py-1 px-3 rounded-full text-sm
                     "
                       >
                         {tech}
