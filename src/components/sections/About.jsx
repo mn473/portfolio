@@ -54,19 +54,18 @@ export const About = () => {
             <div className="flex flex-col">
               <div>
                 <p className="text-neutral-800 mb-6">
-                  Hi, I'm Monica Nguyenduy! I'm a senior studying
+                  Hi, I am Monica Nguyenduy! I'm a senior studying{" "}
                   <span className="text-amber-800">
-                    {" "}
-                    Information Science, Systems, and Technology{" "}
-                  </span>
+                    Information Science, Systems, and Technology
+                  </span>{" "}
                   with a concentration in
-                  <span className="text-amber-800"> Interactive Tech </span>
-                  and <span className="text-amber-800">UX Design</span>. I have
-                  a strong interest in software engineering, specially in
-                  frontend development. With my experience in frontend
-                  development, user experience research, and user-centered
-                  designs, I'm seeking full-time job opportunities. My
-                  experience further spans in backend development and data
+                  <span className="text-amber-800"> Interactive Tech </span>and
+                  <span className="text-amber-800"> UX Design</span>. I have a
+                  strong interest in software engineering, especially in
+                  front-end development. I am seeking full-time job
+                  opportunities with my experience in front-end development,
+                  user experience research, and user-centered design. Further, I
+                  also have experience in back-end development and data
                   analytics.
                 </p>
                 <p className="text-neutral-800 mb-6">
