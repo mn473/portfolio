@@ -33,7 +33,7 @@ export const About = () => {
     <section
       id="about"
       className="min-h-screen flex items-center justify-center
-      relative"
+      relative py-20"
     >
       <RevealOnScroll>
         <div className="max-w-7xl mx-auto px-4 my-3">
