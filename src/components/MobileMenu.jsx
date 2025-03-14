@@ -1,8 +1,4 @@
-import { useEffect } from "react";
-
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
-  //TODO: debug menu not closing when open navbar.jsx appear
-
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-neutral-800/80 z-40 flex flex-col items-center justify-center

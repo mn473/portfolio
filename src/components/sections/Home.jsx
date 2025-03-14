@@ -6,11 +6,11 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative bg-sky-900/5"
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-8xl font-bold mb-5 bg-gradient-to-r from-slate-800 to-sky-900 bg-clip-text text-transparent leading-right">
+          <h1 className="text-5xl md:text-8xl font-bold mb-5 bg-gradient-to-r from-slate-800 to-sky-900 bg-clip-text text-transparent leading-tight">
             Monica Nguyenduy
           </h1>
           <p className="text-neutral-800 md:text-3xl mb-2 max-w-lg mx-auto">
