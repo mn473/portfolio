@@ -39,7 +39,7 @@ const projects = [
     textColor: "text-amber-800",
   },
   {
-    name: "Media Catalog Website w/ Custom CMS",
+    name: "Media Catalog Website with User Authentication",
     date: "Mar 2024 - May 2024",
     description:
       "Server-side interactive website for uploading concert memories and filtering between catalog content. The media contents were stored in a SQL database, with PHP backend for user authentication and data retrieval.",
