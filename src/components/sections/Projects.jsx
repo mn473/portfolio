@@ -82,7 +82,7 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-neutral-800 md:text-xl italic text-center mb-6">
-            Some frontend development & cool projects I've worked on...
+            Some front-end development & cool projects I've worked on...
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-3">
             {projects.map((project, index) => (

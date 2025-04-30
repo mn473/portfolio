@@ -10,7 +10,7 @@ const frontendSkills = [
   "Vue.js",
   "D3.js",
 ];
-const backendSkills = ["Python", "Java", "PHP", "C++", "OCaml"];
+const backendSkills = ["Python", "Java", "C++", "PHP", "OCaml"];
 const dataSkills = [
   "SQL",
   "NumPy",
@@ -20,12 +20,13 @@ const dataSkills = [
   "Scikit-learn",
 ];
 const technology = [
-  "Git",
+  "GitHub",
   "VSCode",
   "Figma",
   "Tableau",
+  "Oracle SQL Developer",
+  "WhereScape Red",
   "AutoDesk Fusion",
-  "Arduino",
 ];
 
 export const About = () => {
@@ -58,15 +59,14 @@ export const About = () => {
                   <span className="text-amber-800">
                     Information Science, Systems, and Technology
                   </span>{" "}
-                  with a concentration in
+                  with concentrations in
                   <span className="text-amber-800"> Interactive Tech </span>and
                   <span className="text-amber-800"> UX Design</span>. I have a
-                  strong interest in software engineering, especially in
-                  front-end development. I am seeking full-time job
-                  opportunities with my experience in front-end development,
-                  user experience research, and user-centered design. Further, I
-                  also have experience in back-end development and data
-                  analytics.
+                  strong passion for software engineering, especially front-end
+                  development. I'm also interested in data analytics, product
+                  design, user experience research, and back-end development.
+                  I'm actively seeking full-time job opportunities in
+                  technology!
                 </p>
                 <p className="text-neutral-800 mb-6">
                   Feel free to contact me at mn473@cornell.edu!
