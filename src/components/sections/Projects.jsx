@@ -1,26 +1,27 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { ProjectCard } from "../ProjectCard";
 import ArduinoMachine from "/src/assets/arduino.png";
-import ContrastApp from "/src/assets/contrastApp.png";
+import SoapMate from "/src/assets/soapmate.png";
 import RodentVisual from "/src/assets/rodentVisual.png";
 import CareerVRApp from "/src/assets/careerVR.png";
 import MediaCatalog from "/src/assets/mediaCatalog.png";
 import SensTechWeb from "/src/assets/sensTechWeb.png";
+import Poster from "/src/assets/Poster.png";
 
 const projects = [
   {
-    name: "Contrast Checker Prototype App",
-    date: "Feb 2025",
+    name: "Ithaca Soap’s Prototype App",
+    date: "Mar 2025 – May 2025",
     description:
-      "Designed and implemented a prototype app allowing users to input foreground and background colors to display the contrast ratio and WCAG accessibility level. The app integrated the Color Contrast Checker library for calculations.",
-    image: ContrastApp,
+      "Researched, designed, and implemented a high-fidelity responsive prototype app that provides users with personalized sustainable soap recommendations in collaboration with client Ithaca Soap.",
+    image: SoapMate,
     skills: ["Vue.js", "JavaScript", "HTML/CSS"],
     bgColor: "bg-amber-800/10",
     textColor: "text-amber-800",
   },
   {
     name: "Arduino Drawing Machine",
-    date: "Sept 2024 - Dec 2024",
+    date: "Sep 2024 - Dec 2024",
     description:
       "2.5DoF gantry marker plotting machine created with ESP32 Feather, hardware, and 3D-printed components. Machine draws with automated text/shape input, with manual joystick control for free draw and marker pressure adjustment.",
     image: ArduinoMachine,
@@ -68,6 +69,16 @@ const projects = [
     bgColor: "bg-sky-900/10",
     textColor: "text-sky-900",
   },
+  {
+    name: "NYC Redlining Detection Algorithm Analysis",
+    date: "Jul 2022 – Aug 2022",
+    description:
+      "Web-scraped NYC datasets using Python to study the long-term impacts of 1930s redlining. Applied community detection and K-means clustering to identify neighborhoods and visualized spatial patterns using Matplotlib.",
+    image: Poster,
+    skills: ["Python"],
+    bgColor: "bg-amber-800/10",
+    textColor: "text-amber-800",
+  },
 ];
 
 export const Projects = () => {
@@ -84,7 +95,7 @@ export const Projects = () => {
           <p className="text-neutral-800 md:text-xl italic text-center mb-6">
             Some front-end development & cool projects I've worked on...
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <div key={index} className="min-h-full">
                 <ProjectCard {...project} />

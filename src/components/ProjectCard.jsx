@@ -25,7 +25,7 @@ export const ProjectCard = ({
         {skills.map((skill, key) => (
           <span
             key={key}
-            className={`py-1 px-4 rounded-full text-sm ${bgColor} ${textColor}`}
+            className={`py-1 px-4 rounded-full text-sm hover:-translate-y-1 transition-all ${bgColor} ${textColor}`}
           >
             {skill}
           </span>

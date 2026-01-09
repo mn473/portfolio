@@ -62,10 +62,10 @@ export const About = () => {
                   with concentrations in
                   <span className="text-amber-800"> Interactive Tech </span>and
                   <span className="text-amber-800"> UX Design</span>. I'm into
-                  building all types of projects, especially interactive ones.
-                  Something I want to learn just for fun is 3D animation, and
-                  I'm always up to learn more skills. I'm seeking full-time job
-                  opportunities in technology!
+                  coding all types of projects, especially interactive ones. I'm
+                  always down to learn new skills, hoping to explore 3D modeling
+                  for fun. I'm seeking full-time job opportunities in
+                  technology!
                 </p>
                 <p className="text-neutral-800 mb-6">
                   Feel free to contact me at monicanguyenduy@gmail.com!
