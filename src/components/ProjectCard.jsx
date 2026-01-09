@@ -8,14 +8,14 @@ export const ProjectCard = ({
   textColor,
 }) => {
   return (
-    <div className="hover:-translate-y-1 transition-all">
+    <div>
       <div
         className={`w-full h-80 flex items-center justify-center rounded-xl mb-4 p-8 ${bgColor}`}
       >
         <img
           src={image}
           alt={name}
-          className="w-auto max-h-64 rounded-xl mb-1 shadow-xl border-neutral-800/10"
+          className="w-auto max-h-64 rounded-xl mb-1 shadow-xl border-neutral-800/10 hover:-translate-y-1 transition-all"
         />
       </div>
       <h3 className="text-xl font-bold">{name}</h3>
